@@ -21,7 +21,8 @@ public class RandomWalk {
      */
     private void move(int dx, int dy) {
         // FIXME do move by replacing the following code
-         throw new RuntimeException("Not implemented");
+        x+=dx;
+        y+=dy;
         // END 
     }
 
@@ -32,6 +33,9 @@ public class RandomWalk {
      */
     private void randomWalk(int m) {
         // FIXME
+        int step=m;
+        for(;step>0;step--)
+            randomMove();
         // END 
     }
 
@@ -52,12 +56,12 @@ public class RandomWalk {
      */
     public double distance() {
         // FIXME by replacing the following code
-         return 0.0;
+         return Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
         // END 
     }
 
     /**
-     * Perform multiple random walk experiments, returning the mean distance.
+     * Perform multiple random walk experiments, returning the mean distance.®
      *
      * @param m the number of steps for each experiment
      * @param n the number of experiments to run

@@ -41,7 +41,10 @@ public class Newton {
         for (; tries > 0; tries--)
             try {
                 final double y = f.apply(x);
-                if (Math.abs(y) < tolerance) return Either.right(x);
+                if (Math.abs(y) < tolerance) {
+                   // System.out.println("Error: " + Math.abs(y));
+                    return Either.right(x);
+                }
                 x = x - y / dfbydx.apply(x);
             } catch (Exception e) {
                 return Either.left("Exception thrown solving " + equation + "=0, given x0=" + x0 + ", maxTries=" + maxTries + ", and tolerance=" + tolerance + " because " + e.getLocalizedMessage());
