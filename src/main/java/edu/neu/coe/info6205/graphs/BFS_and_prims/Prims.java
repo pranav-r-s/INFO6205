@@ -12,9 +12,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Prims {
-    private boolean[] marked; // MST vertices
-    private Queue<Edge> mst; // MST edges
-    private MinPQ<Edge> pq; // crossing (and ineligible) edges
+    private final boolean[] marked; // MST vertices
+    private final Queue<Edge> mst; // MST edges
+    private final MinPQ<Edge> pq; // crossing (and ineligible) edges
     public Prims(EdgeWeightedGraph G)
     {
         pq = new MinPQ<Edge>();

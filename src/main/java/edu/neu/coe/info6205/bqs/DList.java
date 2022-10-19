@@ -171,7 +171,7 @@ public class DList<Item> implements Iterable<Item> {
     }
 
 
-    private D_Element head = null;
-    private D_Element tail = null;
-    private int count = 0;
+    private final D_Element head = null;
+    private final D_Element tail = null;
+    private final int count = 0;
 }

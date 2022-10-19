@@ -32,9 +32,9 @@ package edu.neu.coe.info6205.graphs.Dijkstra;
 import java.util.Stack;
 
 public class Dijkstra {
-    private double[] distTo;          // distTo[v] = distance  of shortest s->v path
-    private DirectedEdge[] edgeTo;    // edgeTo[v] = last edge on shortest s->v path
-    private IndexMinPQ<Double> pq;    // priority queue of vertices
+    private final double[] distTo;          // distTo[v] = distance  of shortest s->v path
+    private final DirectedEdge[] edgeTo;    // edgeTo[v] = last edge on shortest s->v path
+    private final IndexMinPQ<Double> pq;    // priority queue of vertices
 
     public Dijkstra(EdgeWeightedDigraph G, int s)
     {

@@ -88,7 +88,7 @@ public class BSTOptimisedTest {
         assertEquals("X", root.smaller.key);
         bst.put("Z", 37);
         assertEquals("Z", root.larger.key);
-        System.out.println(bst.toString());
+        System.out.println(bst);
         assertEquals(3, bst.size());
     }
 

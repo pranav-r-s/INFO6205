@@ -99,5 +99,4 @@ public class ConfigTest {
     public static final String FIXES = InstrumentedHelper.FIXES;
     public static final String INSURANCE = "";
     public static final String NOCOPY = "";
-;
 }

@@ -5,8 +5,8 @@ package edu.neu.coe.info6205.graphs.BFS_and_prims;
 import java.util.*;
 
 public class BFS {
-    private int V;   // No. of vertices
-    private LinkedList<Integer> adj[]; //Adjacency Lists
+    private final int V;   // No. of vertices
+    private final LinkedList<Integer>[] adj; //Adjacency Lists
 
     public BFS(int v) {
         V = v;
@@ -20,7 +20,7 @@ public class BFS {
     }
 
     public List<Integer> BFS(int s) {
-        boolean visited[] = new boolean[V];
+        boolean[] visited = new boolean[V];
 
         LinkedList<Integer> queue = new LinkedList<Integer>();
 

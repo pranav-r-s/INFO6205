@@ -59,7 +59,7 @@ public class ShortestPaths<V, E extends Number> {
             double relaxedCost = table.get(e.getFrom()).cost + e.getAttributes().doubleValue();
             if (vertexW.cost > relaxedCost) {
                 vertexW.relax(relaxedCost, e);
-                if (pq.contains(w)) pq.remove(w);
+                pq.remove(w);
                 pq.offer(w);
             }
         }

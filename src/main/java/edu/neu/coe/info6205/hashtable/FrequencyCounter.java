@@ -65,13 +65,13 @@ public class FrequencyCounter<Key> implements ImmutableSymbolTable<Key, Integer>
 
     private final ST<Key, Integer> map;
     @SuppressWarnings("CanBeFinal")
-    private long total = 0L;
+    private final long total = 0L;
 
     public static void main(String[] args) {
         FrequencyCounter<String> counter = new FrequencyCounter<>();
 
         for (String arg : args) counter.increment(arg);
 
-        System.out.println(counter.toString());
+        System.out.println(counter);
     }
 }
