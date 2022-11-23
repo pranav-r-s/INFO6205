@@ -58,5 +58,10 @@
             <version>6.11.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>edu.neu.coe.mgen</groupId>
+            <artifactId>INFO6205</artifactId>
+            <version>1</version>
+        </dependency>
     </dependencies>
 </project>

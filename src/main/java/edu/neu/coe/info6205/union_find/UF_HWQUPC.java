@@ -88,7 +88,7 @@ public class UF_HWQUPC implements UF {
             doPathCompression(p);
         return root;
         // FIXME
-        // END 
+        // END
     }
 
     /**
